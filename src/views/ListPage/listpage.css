@@ -1,0 +1,88 @@
+.contact-list {
+  border-radius: 4px;
+  background: white;
+  padding: 10px;
+  margin-bottom: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.contact-list:last-child {
+  margin-bottom: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+.contact-list__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-list__content {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list__name-link {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-list__name-link:hover {
+  text-decoration: underline;
+}
+
+.contact-list__image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+  margin-right: 10px;
+}
+.contact-list__icons {
+  display: flex;
+}
+
+.contact-list__edit {
+  margin-right: 10px;
+}
+
+.contact-list__edit,
+.contact-list__delete {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: #4caf50;
+} /* Green */
+.btn-blue {
+  background-color: #008cba;
+} /* Blue */
+.btn-red {
+  background-color: #f44336;
+} /* Red */
+.btn-white {
+  background-color: #e7e7e7;
+  color: black;
+} /* Gray */
+.btn-black {
+  background-color: #555555;
+} /* Black */

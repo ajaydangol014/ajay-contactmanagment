@@ -1,0 +1,30 @@
+body {
+  background: #f4f7fb !important;
+}
+
+.dashboard__container {
+  height: 100vh;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h3 {
+  margin: 0 0 2px;
+}
+.dashboard__content {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard__content span {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.dashboard__content a {
+  background: #1b70d9;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
