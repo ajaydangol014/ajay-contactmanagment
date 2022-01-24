@@ -23,8 +23,9 @@ h3 {
 
 .dashboard__content a {
   background: #1b70d9;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   text-decoration: none;
   color: white;
+  font-size: 12px;
 }

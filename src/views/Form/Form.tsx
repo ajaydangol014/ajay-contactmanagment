@@ -42,7 +42,8 @@ const Form = (props: any) => {
       await axios
         .post("http://localhost:5000/contact/add", formdata)
         .then(() => {
-          redirect(`/contact/view/${id}`);
+          redirect(`/dashboard`);
+          window.location.reload();
         });
     }
   };

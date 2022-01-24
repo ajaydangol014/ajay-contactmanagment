@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Login/login.css";
 
 const Signup = () => {
   const [username, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
+  const navigate = useNavigate();
 
   const onChangeName = (event: any) => {
     setName(event.target.value);
@@ -29,7 +30,8 @@ const Signup = () => {
     };
 
     await axios.post("http://localhost:5000/users/add", formdata).then(() => {
-      console.log("Test");
+      navigate("login");
+      window.location.reload();
     });
   };
   return (

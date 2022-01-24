@@ -36,8 +36,14 @@ h4 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  color: white;
   background: black;
   margin-right: 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact-list__icons {
   display: flex;

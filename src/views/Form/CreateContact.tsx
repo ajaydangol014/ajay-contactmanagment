@@ -6,7 +6,7 @@ function CreateContact() {
   return (
     <>
       <Headers />
-      <Form mode="false" />
+      <Form />
     </>
   );
 }

@@ -13,7 +13,7 @@ const Dashboard = () => {
       <div className="dashboard__container">
         <div className="dashboard__content">
           <div className="dashboard__welcome">
-            <h3>Hi Ajay!</h3>
+            <h3>Hello dear!</h3>
             <span>Here is your contact list!!</span>
           </div>
           <Link to="/contact/create">Create Contact</Link>

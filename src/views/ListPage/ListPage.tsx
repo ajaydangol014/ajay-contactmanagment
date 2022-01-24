@@ -52,11 +52,13 @@ const ListPage = (props: any) => {
   return (
     <>
       {contactData.map((data: any, key: number) => {
+        let imageName = data.fullname;
+        let imageCharacter = imageName.charAt(0);
         return (
           <div className="contact-list">
             <div className="contact-list__box">
               <div className="contact-list__content">
-                <div className="contact-list__image"></div>
+                <div className="contact-list__image">{imageCharacter}</div>
                 <div className="contact-list__name">
                   <div className="contact-list__name-link">
                     <Link className="" to={`/contact/view/${data._id}`}>
