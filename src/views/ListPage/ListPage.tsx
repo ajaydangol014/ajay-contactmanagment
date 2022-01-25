@@ -28,19 +28,19 @@ const ListPage = (props: any) => {
       .catch((err) => console.log(err));
   };
   // get Data by id
-  const getDataById = async (id: any) => {
+  const getUserId = async (id: any) => {
     await axios
       .get(`http://localhost:5000/contact/get/${id}`)
       .then((response) => {
         console.log(response.data._id, response.data.favorite);
-        addToFavourite(response.data._id, response.data.favorite);
+        addFavorite(response.data._id, response.data.favorite);
       })
       .catch((err) => console.log(err));
   };
 
   // add to favorite
 
-  const addToFavourite = async (id: any, fav: any) => {
+  const addFavorite = async (id: any, fav: any) => {
     await axios
       .get(`http://localhost:5000/contact/favorite/${id}/${fav}`)
       .then((response) => {
@@ -75,7 +75,7 @@ const ListPage = (props: any) => {
                     }`}
                     href="javascript:void()"
                     onClick={() => {
-                      getDataById(data._id);
+                      getUserId(data._id);
                     }}
                   >
                     {data.favorite == true
